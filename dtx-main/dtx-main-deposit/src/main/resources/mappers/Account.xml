@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.lb.demo.model.Account">
+
+	<insert id="save" parameterType="account" keyProperty="id" useGeneratedKeys="true">
+		insert into `tbl_account` (sn, amount, userId) values (#{sn}, #{amount}, #{userId})
+	</insert>
+	
+	<update id="update" parameterType="account">
+		update tbl_account
+		<set>
+			<if test="sn != null and sn != ''">sn = #{sn},</if>
+			amount = #{amount},
+		</set>
+		<where>
+			id = #{id}
+		</where>
+	</update>
+	
+	<select id="find" resultType="account" parameterType="int">
+		select * from tbl_account where id = #{_parameter}
+	</select>
+	
+	<select id="countBySn" resultType="int" parameterType="string">
+		select count(*) from tbl_account where sn = #{_parameter}
+	</select>
+	
+	<select id="findByUserId" resultType="account" parameterType="int">
+		select * from tbl_account where userId = #{_parameter}
+	</select>
+	
+</mapper>

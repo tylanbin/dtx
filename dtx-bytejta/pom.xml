@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>me.lb</groupId>
+	<artifactId>dtx-bytejta</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>dtx-bytejta</name>
+
+	<modules>
+		<!-- 分布式事务测试，提供存款（转入）的服务 -->
+		<module>dtx-bytejta-deposit</module>
+		<!-- 分布式事务测试，提供取款（取出）的服务 -->
+		<module>dtx-bytejta-withdraw</module>
+		<!-- 分布式事务测试，提供转账的服务 -->
+		<module>dtx-bytejta-transfer</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+</project>

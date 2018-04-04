@@ -1,0 +1,24 @@
+# eclipse
+.settings
+.project
+.classpath
+.mymetadata
+.springBeans
+.myhibernatedata
+
+# java
+*.class
+
+# jrebel
+rebel.xml
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# maven
+target/
+
+# atomikos
+transaction-logs/

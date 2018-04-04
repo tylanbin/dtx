@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>me.lb</groupId>
+	<artifactId>dtx</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>dtx</name>
+
+	<modules>
+		<!-- 单机版，使用Service层进行事务处理 -->
+		<module>dtx-simple</module>
+		<!-- 单项目多数据库的分布式事务测试 -->
+		<module>dtx-atomikos</module>
+		<!-- 分布式事务测试，bytejta的实现 -->
+		<module>dtx-bytejta</module>
+		<!-- 分布式事务测试，bytetcc的实现 -->
+		<module>dtx-bytetcc</module>
+		<!-- 用来专门实验分布式事务的项目 -->
+		<module>dtx-main</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+</project>
