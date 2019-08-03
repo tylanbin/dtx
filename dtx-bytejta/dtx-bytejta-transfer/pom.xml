@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
+		<version>1.5.21.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>org.bytesoft</groupId>
 			<artifactId>bytejta-supports-springcloud</artifactId>
-			<version>0.4.2</version>
+			<version>0.4.9</version>
 		</dependency>
 		<!-- cloud -->
 		<dependency>
@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.7</version>
+			<version>3.9</version>
 		</dependency>
 		<!-- test -->
 		<dependency>
@@ -79,7 +79,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Edgware.RELEASE</version>
+				<version>Edgware.SR6</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
